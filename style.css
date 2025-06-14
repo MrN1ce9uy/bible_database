@@ -1,0 +1,121 @@
+/* General styling */
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+#banner {
+  text-align: center;
+  font-size: 24px;
+  margin-botton: 20px;
+  font-family: sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Navigation bar styling */
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #eee;
+}
+
+/* Search form styling */
+#searchForm {
+  text-align: center;
+}
+
+#searchForm label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#searchForm input[type="text"] {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#searchForm input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Book selection form styling */
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+select {
+  width: 200px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Content styling */
+#content {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#dropDown {
+  text-align: center;
+}
+
+/* Hyperlink Styling */
+a:link {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}

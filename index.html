@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<!-- Set the title of the webpage -->
+<title>Bible</title>
+<!-- Set the character encoding for the webpage -->
+<meta charset="utf-8">
+<!-- Set the viewport for responsive design -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Link to an external CSS stylesheet -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Display a header -->
+<a href="index.html"><h2 id="banner" >Read the Bible</h2></a>
+<!-- Navigation bar -->
+<nav>
+  <ul>
+    <li><a href="proverbs.html">Daily Proverbs</a></li>
+    <li><a href="psalms.html">Daily Psalms</a></li>
+    <li><a href="armor.html">Armor of God</a></li>
+    <li><a href="#">Link 4</a></li>
+  </ul>
+</nav>
+<br>
+<!-- Create a search form that sends data to search.php -->
+<form method="get" action="search.php" id="searchForm">
+<label>Search the Bible:</label>
+<input type="text" name="search" id="search">
+<input type="submit" value="Search">
+</form>
+<br>
+<!-- Create a dropdown menu to select a book from the Bible -->
+<form action="" id="dropDown">
+	<label for="books">Bible Book List:</label>
+	<select name="Book" onchange="showBook(this.value)">
+	<optgroup label="Old Testament">
+		<option value="1">Genesis</option>
+		<option value="2">Exodus</option>
+		<option value="3">Leviticus</option>
+		<option value="4">Numbers</option>
+		<option value="5">Deuteronomy</option>
+		<option value="6">Joshua</option>
+		<option value="7">Judges</option>
+		<option value="8">Ruth</option>
+		<option value="9">1 Samuel</option>
+		<option value="10">2 Samuel</option>
+		<option value="11">1 Kings</option>
+		<option value="12">2 Kings</option>
+		<option value="13">1 Chronicles</option>
+		<option value="14">2 Chronicles</option>
+		<option value="15">Ezra</option>
+		<option value="16">Nehemiah</option>
+		<option value="17">Esther</option>
+		<option value="18">Job</option>
+		<option value="19">Psalms</option>
+		<option value="20">Proverbs</option>
+		<option value="21">Ecclesiastes</option>
+		<option value="22">Song of Solomon</option>
+		<option value="23">Isaiah</option>
+		<option value="24">Jeremiah</option>
+		<option value="25">Lamentations</option>
+		<option value="26">Ezekiel</option>
+		<option value="27">Daniel</option>
+		<option value="28">Hosea</option>
+		<option value="29">Joel</option>
+		<option value="30">Amos</option>
+		<option value="31">Obadiah</option>
+		<option value="32">Jonah</option>
+		<option value="33">Micah</option>
+		<option value="34">Nahum</option>
+		<option value="35">Habakkuk</option>
+		<option value="36">Zephaniah</option>
+		<option value="37">Haggai</option>
+		<option value="38">Zechariah</option>
+		<option value="39">Malachi</option>
+	</optgroup>
+	<optgroup label="New Testament">
+		<option value="40">Matthew</option>
+		<option value="41">Mark</option>
+		<option value="42">Luke</option>
+		<option value="43">John</option>
+		<option value="44">Acts</option>
+		<option value="45">Romans</option>
+		<option value="46">1 Corinthians</option>
+		<option value="47">2 Corinthians</option>
+		<option value="48">Galatians</option>
+		<option value="49">Ephesians</option>
+		<option value="50">Philippians</option>
+		<option value="51">Colossians</option>
+		<option value="52">1 Thessalonians</option>
+		<option value="53">2 Thessalonians</option>
+		<option value="54">1 Timothy</option>
+		<option value="55">2 Timothy</option>
+		<option value="56">Titus</option>
+		<option value="57">Philemon</option>
+		<option value="58">Hebrews</option>
+		<option value="59">James</option>
+		<option value="60">1 Peter</option>
+		<option value="61">2 Peter</option>
+		<option value="62">1 John</option>
+		<option value="63">2 John</option>
+		<option value="64">3 John</option>
+		<option value="65">Jude</option>
+		<option value="66">Revelation</option>
+	</optgroup>
+	</select>
+</form>
+<br>
+<!-- Container to display the content fetched from the server -->
+<div id="content"></div>
+<script src="script.js" type="text/javascript"></script>
+</body>
+</html>
